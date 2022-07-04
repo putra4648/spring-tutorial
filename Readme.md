@@ -11,3 +11,6 @@
 
 - Duplicate Bean
   : Bean bisa menggunakan tipe data yang sama, jika sama harus membuat nama bean yang berbeda dan untuk mengaksesnya harus menggunakan nama bean yang telah dibuat
+
+- Primary Bean
+  : Bean yang hanya bisa dipilih menjadi paling utama untuk mengaksesnya, secara otomatis saat dipanggil maka primary bean-nya akan terpilih
