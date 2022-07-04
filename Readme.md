@@ -8,3 +8,6 @@
 
 - Bean
   : Saat masuk ke dalam IoC disebut Bean, secara default Bean adalah singleton
+
+- Duplicate Bean
+  : Bean bisa menggunakan tipe data yang sama, jika sama harus membuat nama bean yang berbeda dan untuk mengaksesnya harus menggunakan nama bean yang telah dibuat
