@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.belajar.springtutorial.bean.DatabaseConfiguration;
+import com.belajar.springtutorial.bean.DatabaseBean;
 
 public class DatabaseBeanTest {
 
@@ -19,7 +19,7 @@ public class DatabaseBeanTest {
 
     @Test
     void testGetBean() {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(DatabaseConfiguration.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(DatabaseBean.class);
 
         // Bean adalah singleton secara default
         Foo foo1 = applicationContext.getBean(Foo.class);

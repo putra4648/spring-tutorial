@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Configuration
-public class DatabaseConfiguration {
+public class DatabaseBean {
     @Bean
     public Foo foo() {
         Foo foo = new Foo();
