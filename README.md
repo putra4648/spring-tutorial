@@ -12,7 +12,7 @@
 
   Saat masuk ke dalam IoC disebut Bean, secara default Bean adalah singleton dan Bean otomatis akan dibuat dan dipanggil di IoC.
 
-  **_Dalam membuat Bean harus terdapat anotasi @Configuration_**
+  **Dalam membuat Bean harus terdapat anotasi @Configuration**
 
   - Duplicate Bean:
 
@@ -43,6 +43,13 @@
     Saat terdapat Duplicate Bean dengan tipe data sama, Spring memilih Bean yang memiliki Primary Bean
     Digunakan untuk memilih Bean secara manual
     Dengan menggunakan anotasi @Qualifier(value="namaBean") pada parameter methodnya
+
+  - Circular Dependencies :
+
+    **Harus berhati-hati terhadap Circular Dependencies**
+    Jika bean A bergantung pada B, bean B bergantung pada C dan ternyata C bergantung pada A, maka otomatis Spring akan mendeteksi error
+
+    **Jangan pernah membuat Circular Dependecies selamanya jangan**
 
 # Sumber belajar
 
