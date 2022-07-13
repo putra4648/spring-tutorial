@@ -3,12 +3,12 @@ package com.belajar.springtutorial.di;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.belajar.springtutorial.cyclic.CyclicA;
-import com.belajar.springtutorial.cyclic.CyclicB;
-import com.belajar.springtutorial.cyclic.CyclicC;
+import com.belajar.springtutorial.models.cyclic.CyclicA;
+import com.belajar.springtutorial.models.cyclic.CyclicB;
+import com.belajar.springtutorial.models.cyclic.CyclicC;
 
 @Configuration
-public class CyclicDI {
+public class CircularDependencies {
 
     @Bean
     public CyclicA cyclicA(CyclicB cyclicB) {

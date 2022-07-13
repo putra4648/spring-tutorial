@@ -1,4 +1,4 @@
-package com.belajar.springtutorial;
+package com.belajar.springtutorial.models;
 
 // Konsep singleton
 public class Database {

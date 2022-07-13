@@ -1,7 +1,4 @@
-package com.belajar.springtutorial.di;
-
-import com.belajar.springtutorial.Bar;
-import com.belajar.springtutorial.Foo;
+package com.belajar.springtutorial.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

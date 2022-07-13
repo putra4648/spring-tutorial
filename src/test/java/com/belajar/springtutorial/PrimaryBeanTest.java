@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.belajar.springtutorial.bean.PrimaryBean;
+import com.belajar.springtutorial.models.Foo;
 
 public class PrimaryBeanTest {
 

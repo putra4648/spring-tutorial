@@ -6,8 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.belajar.springtutorial.di.DIConfig;
-import com.belajar.springtutorial.di.FooBar;
+import com.belajar.springtutorial.di.DependencyInjection;
+import com.belajar.springtutorial.models.Bar;
+import com.belajar.springtutorial.models.Foo;
+import com.belajar.springtutorial.models.FooBar;
 
 public class DependencyInjectionTest {
 
@@ -15,7 +17,7 @@ public class DependencyInjectionTest {
 
     @BeforeEach
     void setup() {
-        context = new AnnotationConfigApplicationContext(DIConfig.class);
+        context = new AnnotationConfigApplicationContext(DependencyInjection.class);
     }
 
     // Versi otomatis

@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.belajar.springtutorial.bean.CustomBeanConfiguration;
+import com.belajar.springtutorial.bean.CustomBean;
+import com.belajar.springtutorial.models.Foo;
 
 public class CustomBeanConfigurationTest {
 
@@ -14,7 +15,7 @@ public class CustomBeanConfigurationTest {
 
     @BeforeEach
     void setup() {
-        context = new AnnotationConfigApplicationContext(CustomBeanConfiguration.class);
+        context = new AnnotationConfigApplicationContext(CustomBean.class);
     }
 
     @Test

@@ -3,6 +3,8 @@ package com.belajar.springtutorial;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import com.belajar.springtutorial.models.Database;
+
 // Test apakah 1 instance objek tetap sama
 // walau dibuat berkali-kali
 public class DatabaseTest {

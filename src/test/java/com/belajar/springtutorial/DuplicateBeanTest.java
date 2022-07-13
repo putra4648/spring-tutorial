@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.belajar.springtutorial.bean.DuplicateBean;
+import com.belajar.springtutorial.models.Foo;
 
 public class DuplicateBeanTest {
 

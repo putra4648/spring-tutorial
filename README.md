@@ -47,6 +47,7 @@
   - Circular Dependencies :
 
     **Harus berhati-hati terhadap Circular Dependencies**
+
     Jika bean A bergantung pada B, bean B bergantung pada C dan ternyata C bergantung pada A, maka otomatis Spring akan mendeteksi error
 
     **Jangan pernah membuat Circular Dependecies selamanya jangan**

@@ -5,11 +5,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
-import com.belajar.springtutorial.Bar;
-import com.belajar.springtutorial.Foo;
+import com.belajar.springtutorial.models.Bar;
+import com.belajar.springtutorial.models.Foo;
+import com.belajar.springtutorial.models.FooBar;
 
 @Configuration
-public class DIConfig {
+public class DependencyInjection {
 
     // Secara default nilai Foo akan di isi disini
     @Primary

@@ -1,4 +1,4 @@
-package com.belajar.springtutorial.cyclic;
+package com.belajar.springtutorial.models.cyclic;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

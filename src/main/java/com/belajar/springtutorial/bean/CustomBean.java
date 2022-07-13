@@ -4,10 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
-import com.belajar.springtutorial.Foo;
+import com.belajar.springtutorial.models.Foo;
 
 @Configuration
-public class CustomBeanConfiguration {
+public class CustomBean {
     @Primary
     @Bean(value = "fooFirst")
     public Foo foo1() {
