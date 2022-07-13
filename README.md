@@ -66,8 +66,8 @@
 - [x] Primary Bean
 - [x] Mengubah Nama Bean
 - [x] Dependency Injection
-- [ ] Memilih Dependency
-- [ ] Circular Dependencies
+- [x] Memilih Dependency
+- [x] Circular Dependencies
 - [ ] Depends On
 - [ ] Lazy Bean
 - [ ] Scope
