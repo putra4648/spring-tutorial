@@ -39,6 +39,11 @@
     Secara otomatis Spring akan mencari bean sesuai dengan tipe parameter tersebut
     Terjadi error jika tidak ada Bean yang cocok dan terdapat lebih dari 1 Bean kecuali terdapat Primary Bean
 
+  - Pemilihan DI :
+    Saat terdapat Duplicate Bean dengan tipe data sama, Spring memilih Bean yang memiliki Primary Bean
+    Digunakan untuk memilih Bean secara manual
+    Dengan menggunakan anotasi @Qualifier(value="namaBean") pada parameter methodnya
+
 # Sumber belajar
 
 [Youtube here](https://www.youtube.com/watch?v=VM3rwdMBORY)

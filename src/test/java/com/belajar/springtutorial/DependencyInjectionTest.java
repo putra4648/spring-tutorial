@@ -21,7 +21,11 @@ public class DependencyInjectionTest {
     // Versi otomatis
     @Test
     void testWithDI() {
-        Foo foo = context.getBean(Foo.class);
+
+        // Jika tidak ada nama Bean yang cocok akan terjadi error
+        // Untuk itu harus di isi sesuai dengan nama Bean-nya
+        Foo foo = context.getBean("fooSecond", Foo.class);
+
         Bar bar = context.getBean(Bar.class);
         FooBar fooBar = context.getBean(FooBar.class);
 
