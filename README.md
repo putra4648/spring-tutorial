@@ -1,22 +1,43 @@
 # Hal - hal yang ada pada Java Spring
 
 - Application Context
-  : Menggunakan IoC (Inversi of Control) / Container.
 
-- Singleton
-  : Object yang hanya dibuat 1 kali saja, jika membuat object baru akan mengembalikan object sama lagi.
+  Menggunakan IoC (Inversi of Control) / Container.
 
-- Bean
-  : Saat masuk ke dalam IoC disebut Bean, secara default Bean adalah singleton dan Bean otomatis akan dibuat dan dipanggil di IoC.
+- Singleton :
 
-- Duplicate Bean
-  : Bean bisa menggunakan tipe data yang sama, jika sama harus membuat nama bean yang berbeda dan untuk mengaksesnya harus menggunakan nama bean yang telah dibuat.
+  Object yang hanya dibuat 1 kali saja, jika membuat object baru akan mengembalikan object sama lagi.
 
-- Primary Bean
-  : Bean yang hanya bisa dipilih menjadi paling utama untuk mengaksesnya, secara otomatis saat dipanggil maka primary bean-nya akan terpilih.
+- Bean :
 
-- Mengubah nama Bean
-  : Secara default nama Bean menggunakan nama method, pada dasarnya Bean adalah unik dan tidak boleh sama, maka dari itu mengubah Bean berguna jika terjadi bentrok antar Bean yang sama. Mengubah nama Bean dengan menambah method value di dalam anotasi @Bean().
+  Saat masuk ke dalam IoC disebut Bean, secara default Bean adalah singleton dan Bean otomatis akan dibuat dan dipanggil di IoC.
+
+  **_Dalam membuat Bean harus terdapat anotasi @Configuration_**
+
+  - Duplicate Bean:
+
+    Bean bisa menggunakan tipe data yang sama, jika sama harus membuat nama Bean yang berbeda dan untuk mengaksesnya harus menggunakan nama Bean yang telah dibuat.
+
+  - Primary Bean :
+
+    Bean yang hanya bisa dipilih menjadi paling utama untuk mengaksesnya, secara otomatis saat dipanggil maka primary bean-nya akan terpilih.
+
+  - Mengubah nama Bean :
+
+    Secara default nama Bean menggunakan nama method, pada dasarnya Bean adalah unik dan tidak boleh sama, maka dari itu mengubah Bean berguna jika terjadi bentrok antar Bean yang sama. Mengubah nama Bean dengan menambah method value di dalam anotasi @Bean().
+
+- Dependency Injection :
+
+  DI adalah konsep membuat obyek secara otomatis yang bergantung pada obyek lainnya atau disebut dependencies, otomatis DI akan masuk (inject) ke dalam obyek yang dibutuhkan.
+  Konsepnya sama dengan IoC
+  Tanpa DI akan sulit untuk membuat relasi antar dependencies.
+
+  - Spring DI :
+
+    Spring sejak awal menggunakan DI
+    Membuat method untuk Bean bisa menggunakan parameter  
+    Secara otomatis Spring akan mencari bean sesuai dengan tipe parameter tersebut
+    Terjadi error jika tidak ada Bean yang cocok dan terdapat lebih dari 1 Bean kecuali terdapat Primary Bean
 
 # Sumber belajar
 
@@ -24,8 +45,14 @@
 
 # TODO
 
+- [x] IoC / Container
+- [x] Application Context
+- [x] Singleton
+- [x] Bean
+- [x] Duplicate Bean
+- [x] Primary Bean
 - [x] Mengubah Nama Bean
-- [ ] Dependency Injection
+- [x] Dependency Injection
 - [ ] Memilih Dependency
 - [ ] Circular Dependencies
 - [ ] Depends On
