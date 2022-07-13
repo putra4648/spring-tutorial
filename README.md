@@ -2,7 +2,7 @@
 
 - Application Context
 
-  Menggunakan IoC (Inversi of Control) / Container.
+  Menggunakan IoC (Inversion of Control) / Container.
 
 - Singleton :
 
@@ -40,6 +40,7 @@
     Terjadi error jika tidak ada Bean yang cocok dan terdapat lebih dari 1 Bean kecuali terdapat Primary Bean
 
   - Pemilihan DI :
+
     Saat terdapat Duplicate Bean dengan tipe data sama, Spring memilih Bean yang memiliki Primary Bean
     Digunakan untuk memilih Bean secara manual
     Dengan menggunakan anotasi @Qualifier(value="namaBean") pada parameter methodnya
