@@ -1,6 +1,7 @@
 package com.belajar.springtutorial;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -9,9 +10,15 @@ import com.belajar.springtutorial.bean.PrimaryBean;
 
 public class PrimaryBeanTest {
 
+    private ApplicationContext context;
+
+    @BeforeEach
+    void setup() {
+        context = new AnnotationConfigApplicationContext(PrimaryBean.class);
+    }
+
     @Test
     void testPrimaryBean() {
-        ApplicationContext context = new AnnotationConfigApplicationContext(PrimaryBean.class);
 
         // foo adalah primary bean
         Foo foo = context.getBean(Foo.class);
