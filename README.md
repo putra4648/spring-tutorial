@@ -14,12 +14,12 @@
 - [x] Dependency Injection
 - [x] Memilih Dependency
 - [x] Circular Dependencies
-- [ ] Depends On
-- [ ] Lazy Bean
-- [ ] Scope
-- [ ] Membuat Scope
-- [ ] Life Cycle
-- [ ] Life Cycle Annotation
+- [x] Depends On
+- [x] Lazy Bean
+- [x] Scope
+- [x] Membuat Scope
+- [x] Life Cycle
+- [x] Life Cycle Annotation
 - [ ] Import
 - [ ] Component Scan
 - [ ] Component

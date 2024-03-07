@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-
 import com.belajar.springtutorial.models.Bar;
 import com.belajar.springtutorial.models.Foo;
 import com.belajar.springtutorial.models.FooBar;
@@ -19,7 +18,7 @@ public class DependencyInjection {
         return new Foo();
     }
 
-    // Bean Foo versio optional
+    // Bean Foo versi optional
     @Bean
     public Foo fooSecond() {
         return new Foo();

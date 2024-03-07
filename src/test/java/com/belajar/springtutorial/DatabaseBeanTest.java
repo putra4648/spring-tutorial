@@ -4,11 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import com.belajar.springtutorial.bean.DatabaseBean;
 import com.belajar.springtutorial.models.Foo;
 
-public class DatabaseBeanTest {
+class DatabaseBeanTest {
 
     @Test
     void testCreatedBean() {
@@ -20,12 +19,15 @@ public class DatabaseBeanTest {
 
     @Test
     void testGetBean() {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(DatabaseBean.class);
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(DatabaseBean.class);
 
         // Bean adalah singleton secara default
-        Foo foo1 = applicationContext.getBean(Foo.class);
-        Foo foo2 = applicationContext.getBean(Foo.class);
+        Foo foo1 = context.getBean(Foo.class);
+        Foo foo2 = context.getBean(Foo.class);
 
         Assertions.assertSame(foo1, foo2);
+
+        context.close();
     }
 }
